@@ -4,10 +4,6 @@ import FriendsList from './Component/FriendsList';
 import axios from 'axios';
 import './App.css';
 
-const LinksUrl = {
-  home: '/'
-};
-
 class App extends Component {
   constructor() {
     super();
@@ -31,7 +27,7 @@ class App extends Component {
       <div className='App'>
       <Route
           exact
-          path={LinksUrl.home}
+          path= '/'
           render={() => <FriendsList friends={this.state.friends} />}
         />
       </div>
